@@ -1,0 +1,16 @@
+# Important Points About Recursion 
+
+### Intro ###
+
+1. To check whether a problem is recursive or not, you have to see whether we have any choice in that function.
+   If we have choices, then can we make decisions on those choices. 
+
+2. On making decisions, our input with reduce on it's own. And this is what recursion is, breaking a larger 
+   problem into smaller. We take decisions and reduce the input domain and thus the problem. 
+
+3. To represent a recursive decision diagram, we make use of recursive tree. This is built using input output 
+   method. We get final answer at the leaf of our decision tree. 
+
+4. A classical problem to begin with in visualizing recursion is Subset problem. In subset problem, for every 
+   character, we have a choice of selecting/rejecting it. And on the basis of choice we can move further. 
+
