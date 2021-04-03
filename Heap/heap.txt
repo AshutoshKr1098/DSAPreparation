@@ -1,0 +1,21 @@
+A heap data structure can be of 2 types: Min heap and max heap. 
+
+#problem identification
+
+1. Kth
+2. Smallest/Largest
+3. You will want to sort it and then return the answer. 
+
+# Benefits
+
+We reduce the sorting time from NlogN to NlogK. We always maintain a restriction in space, and dont consider anything 
+beyond K. 
+
+#How heap works?
+
+Heap will always have the top element as either max of all or min of all. And the same goes true recursively for
+each parent node in subtrees.
+
+#How to code using heap?
+
+make use of STL's built in priority_queue. 
