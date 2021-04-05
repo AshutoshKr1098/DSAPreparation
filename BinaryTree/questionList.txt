@@ -1,0 +1,6 @@
+Date: 5th April 2021
+
+1. invert tree [] -> postorder traversal
+2. diameter of a tree -> postorder traversal
+3. sum of root to leaf binary tree [https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/] ->preorder
+4. path sum
