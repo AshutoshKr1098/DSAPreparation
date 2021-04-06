@@ -3,4 +3,19 @@ Date: 5th April 2021
 1. invert tree [] -> postorder traversal
 2. diameter of a tree -> postorder traversal
 3. sum of root to leaf binary tree [https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/] ->preorder
-4. path sum
+4. path sum [https://leetcode.com/problems/path-sum/] - preorder traversal
+5. path sum2 [https://leetcode.com/problems/path-sum-ii/] - preorder
+6. sum root to leaf numbers [https://leetcode.com/problems/sum-root-to-leaf-numbers/] -preorder
+7. lonely node [https://leetcode.com/problems/find-all-the-lonely-nodes/] - level order traversal
+
+Date: 6th April 2021
+
+1. Second minimum node in a binary tree -> level order traversal + keeping track of both minimums.
+2. subtree of another tree -> created a sub function that matched with T, and in S, whenever we found a subroot
+   having same value as T's root, pass S's subroot and T to that sub function
+3.Lowest common ancestor of a binary tree -> Solved using recursion.
+
+Date: 7th April 2021
+
+1. Lowest common ancestor of a binary tree continued... [solving using all methods]
+
