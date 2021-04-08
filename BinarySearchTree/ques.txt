@@ -4,3 +4,5 @@ Date: 8th April 2021
 2. range Sum -> solved using postorder traversal. Though the question is leetcode easy, it took me good 
                 amount of time to come up with solution.
                 Need to solve using typical BST property.
+3. lcaInBST -> solved considering tree's nodes are unique, keys present [then used property of lca and bst]
+4. kthSmallest 
