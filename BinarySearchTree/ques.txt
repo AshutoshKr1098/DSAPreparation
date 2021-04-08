@@ -1,3 +1,6 @@
 Date: 8th April 2021
 
-1. Solved Validate BST using inorder traversal and range comparison. TC:O(n) SC: O(n)
+1. Validate BST -> solved using inorder traversal and range comparison. TC:O(n) SC: O(n)
+2. range Sum -> solved using postorder traversal. Though the question is leetcode easy, it took me good 
+                amount of time to come up with solution.
+                Need to solve using typical BST property.
