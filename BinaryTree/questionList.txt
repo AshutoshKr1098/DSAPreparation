@@ -18,4 +18,12 @@ Date: 6th April 2021
 Date: 7th April 2021
 
 1. Lowest common ancestor of a binary tree continued... [solving using all methods]
+2. Solved find path from root to any node using preorder traversal (code in 1.TreeBuilding...)
+3. Solved LCA-2 on leetcode using solution from geeksforgeeks
+4. Attempting All nodes K distance in binary tree [https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/]
+   update: problem solved using the approach I planned in 1 go wohooooo!!!!! but time and space taken is too much
+   Need to optimize it further.
+5. https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/
+6. Count Good nodes in binary tree [https://leetcode.com/problems/count-good-nodes-in-binary-tree/]
+
 
