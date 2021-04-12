@@ -5,4 +5,12 @@ Date: 8th April 2021
                 amount of time to come up with solution.
                 Need to solve using typical BST property.
 3. lcaInBST -> solved considering tree's nodes are unique, keys present [then used property of lca and bst]
-4. kthSmallest 
+4. kthSmallest -> to be solved more efficiently(and also a variation where bst is getting modified)
+
+Date: 11th April 2021
+
+1. https://practice.geeksforgeeks.org/problems/add-all-greater-values-to-every-node-in-a-bst/1
+Solution: right, root, left. [ I followed recursion in this way. ]
+
+Date: 12th April 2021
+1. Delete Node in a BST[solution help taken from pepcoding video]
