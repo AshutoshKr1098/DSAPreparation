@@ -33,6 +33,38 @@ bool binary_search_num(int *arr,int num,int n)
     return false;
 }
 
+//Agnostic Binary Search (where order of sorting is unknown to us)
+bool agnostic_binary_search(int *arr,int num,int n)
+{
+    int s = 0, e = n - 1;
+    if(s==e && arr[s]==num)
+        return true;
+    else if(s==e && arr[s]!=num)
+        return false;
+        
+    while (s <= e)
+    {
+        int mid = s + (e - s) / 2;
+        if(arr[mid]==num)
+            return true;
+        else if(arr[mid]<num)
+        {
+            if(arr[0]<arr[n-1])
+                s = mid + 1;
+            else
+                e = mid - 1;
+        }
+        else
+        {
+            if(arr[0]<arr[n-1])
+                e = mid - 1;
+            else
+                s = mid + 1;
+        }
+    }
+    return false;
+}
+
 int main()
 {
     int n;
