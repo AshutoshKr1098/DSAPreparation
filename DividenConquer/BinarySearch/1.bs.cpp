@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+//Recursive Implementation
 bool binary_search_num(int *arr,int num,int s,int e)
 {
     if(s>e)
@@ -11,6 +13,24 @@ bool binary_search_num(int *arr,int num,int s,int e)
         return binary_search_num(arr, num, mid + 1, e);
     else
         return binary_search_num(arr, num, s, mid - 1);
+}
+
+//Iterative Implementation
+
+bool binary_search_num(int *arr,int num,int n)
+{
+    int s = 0, e = n - 1;
+    while(s<=e)
+    {
+        int mid = s + (e - s) / 2;
+        if(arr[mid]==num)
+            return true;
+        else if(arr[mid]<num)
+            s = mid + 1;
+        else
+            e = mid - 1;
+    }
+    return false;
 }
 
 int main()
