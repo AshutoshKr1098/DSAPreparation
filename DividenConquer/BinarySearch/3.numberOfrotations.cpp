@@ -2,11 +2,6 @@
  * Problem: Find the number of times a sorted array has been rotated
 */
 
-/**
- * Problem: Find first and last occurence of a number in given sorted array
- *          If the number does not exist then return -1
-*/
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -17,9 +12,9 @@ int count_number_of_rotations(int *arr,int s,int e,int n)
     int mid = s + (e - s) / 2;
     if(0<mid && mid<n-1 && arr[mid-1]>arr[mid] && arr[mid]<arr[mid+1])
         return mid;  
-    if(mid==0 && arr[mid]<arr[n-1])
+    if(mid==0 && arr[mid]<arr[n-1]) //A case when no rotation is made, thus 0th element is anyway gonna be less than end element
         return 0;
-    else if(mid==n-1 && arr[mid]<arr[mid-1])
+    else if(mid==n-1 && arr[mid]<arr[mid-1]) //A case where least element is at last, then anyway it's gonna be less than it's previous one
         return n-1;
     else if(arr[mid]>arr[n-1])
         return count_number_of_rotations(arr, mid + 1, e, n);
