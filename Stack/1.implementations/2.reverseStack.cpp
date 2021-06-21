@@ -14,13 +14,14 @@ void insertAtEnd(stack<int>&st,int x)
     int top = st.top();
     st.pop();
     insertAtEnd(st, x);
+    //Finally push the original top element of this stack
     st.push(top);
     return;
 }
 void reverseStack(stack<int>&st)
 {
     //Base case when stack size is 1.
-    if(st.size() == 0)
+    if(st.size() == 1)
         return;
 
     int x = st.top();
