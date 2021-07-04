@@ -1,0 +1,16 @@
+https://leetcode.com/discuss/study-guide/1237448/Concept-based-Crash-Course-on-patternstechniques-List-of-problems-from-Blind
+
+
+Graph
+https://leetcode.com/discuss/study-guide/655708/Graph-For-Beginners-Problems-or-Pattern-or-Sample-Solutions
+
+
+
+Backtracking
+https://leetcode.com/problems/subsets/discuss/27281/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning
+
+
+DP
+https://leetcode.com/discuss/study-guide/1050391/Must-do-Dynamic-programming-Problems-Category-wise
+
+
