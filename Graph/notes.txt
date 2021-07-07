@@ -4,8 +4,13 @@
 - Find shortest path from source to destination (uses parent arrray)
 - https://leetcode.com/problems/shortest-path-in-binary-matrix/ (uses distance array)
 - https://leetcode.com/problems/shortest-path-to-get-food/submissions/ (uses distance array)
+- https://leetcode.com/problems/walls-and-gates/  [solved using the approach of rotten oranges]
+TODO Questions
+- https://leetcode.com/problems/rotting-oranges/ [need to optimize the solution]
 
 
+Graph with DP
+https://leetcode.com/problems/as-far-from-land-as-possible/ [this also looks like we can solve using rotten oranges approach]
 
 
 2. DFS Questions
