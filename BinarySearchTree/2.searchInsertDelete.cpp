@@ -58,8 +58,7 @@ node* buildTree()
 */
 
 node* insert(node* root, int Key)
-{
-    // Your code here
+{    
     // if(!search(root,Key)) // I was first searching, but this was not needed, as I then added the logic at line 71
     // {
         if(root==NULL)
@@ -77,9 +76,6 @@ node* insert(node* root, int Key)
         if(root->data<Key)
             root->right = insert(root->right,Key);
         return root;
-    
-    // else
-    //     return root;
     
 }
 
@@ -112,7 +108,20 @@ bool search(node *root,int key)
  *      1. root of tree
  *      2. element to delete
  * Approach:
- *      1. 
+ *      1. If root is null, so return NULL, as nothing to delete
+ *      2. If root value is smaller than the value to be deleted, that means the deletion will take
+ *          place on right subtree. And due to this deletion some structure of right tree will change
+ *          so just root->right = delete(root->right,val)
+ *          This line means, root will append to it's right, whatever structure it's right subtree will
+ *          return post deletion.
+ *      3. Same goes for left subtree
+ *      4. Finally, if root is the node we were looking for to delete, then there will exist 3 cases
+ *          a. it will have a left child but not a right child, so in this case just return the left child
+ *          b. it will have a right child, so in this case return just the right child
+ *          c. it will have both childs, so either go left, then go extreme end / or go right and turn 
+ *             extreme left. 
+ *          d. finally grabbing the correct node, replace it's value with root nodes vlu and delete this
+ *             leaf node by calling this function again.
 */
 node* deleteNode(node* root, int key) {
     if(root==NULL)
