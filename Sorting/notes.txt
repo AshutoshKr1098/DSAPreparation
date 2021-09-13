@@ -1,0 +1,33 @@
+1. Sorting Definitions
+-----------------------
+
+Sorting is a way to arrange elements in increasing/decreasing manner based on some criteria.
+For ex: Let's have an array : 2,5,8,6,10
+
+if we sort it on the basis of value in increasing order : 2 5 6 8 10
+if we sort it on the basis of no. of divisors: 
+2-2
+5-2
+6-4
+8-4
+10-4
+
+therefore sorting will be 2 5 6 8 10
+
+Properties to look for while sorting
+------------------------------------
+1. Time complexity
+2. Space complexity
+3. Stability ( order of equi-valued elements in non sorted array remains same in sorted array)
+4. recursive/iterative
+5. inplace / extra memory needed
+
+
+Main Sorting Algos to look for (list might get updated in future)
+-------------------------------
+1. selection sort
+2. insertion sort
+3. bubble sort
+4. quick sort
+5. merge sort
+6. heap sort
