@@ -8,6 +8,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/***
+ * Method :     lowerBound
+ * Description: This is an iterative method to find lower bound of x in sorted array
+ * Parameters : arr - sorted array
+ *              n   - total number of elements in array
+ *              x   - element to find 
+ * Return     :  n if all elements are smaller than x
+ *               index of lower bound element 
+ * */
 int lowerBound(int *arr,int n,int x)
 {
     int s = 0, e = n - 1;
@@ -15,17 +24,30 @@ int lowerBound(int *arr,int n,int x)
     while (s <= e)
     {
         int mid = s+ (e - s) / 2;
+
+        // if an element is equal to or greater, than we take it as a candidate and keep exploring it's left
         if(arr[mid]>=x)
         {
             res = mid;
             e= mid - 1;
         }
+
+        // else we search for appropriate candidate on right
         else
             s = mid + 1;
     }
     return res;
 }
 
+/***
+ * Method :     upperBound
+ * Description: This is an iterative method to find upper bound of x in sorted array
+ * Parameters : arr - sorted array
+ *              n   - total number of elements in array
+ *              x   - element to find 
+ * Return     :  n if all elements are smaller than x
+ *               index of upper bound element 
+ * */
 int upperBound(int *arr,int n,int x)
 {
     int s = 0, e = n - 1;
@@ -37,6 +59,8 @@ int upperBound(int *arr,int n,int x)
         {
             s= mid + 1;
         }
+
+        //A suitable candidate for upper bound is element which is strictly greater than x
         else
         {
             res = mid;
@@ -46,6 +70,14 @@ int upperBound(int *arr,int n,int x)
     return res;
 }
 
+/***
+ * Method :     countElements
+ * Description: This is an iterative method to count total occurences of x in sorted array
+ * Parameters : arr - sorted array
+ *              n   - total number of elements in array
+ *              x   - element to find 
+ * Return     :  difference of upper bound and lower bound of x.
+ * */
 int countElements(int *arr,int n,int x)
 {
     int lb = lowerBound(arr, n, x);
